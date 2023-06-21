@@ -13,7 +13,6 @@ public:
 private:
 	KeyboardInput m_inputKeyboard;
 	Ball ball;
-	Ball* ptr = &ball;
 	Clock clock;
 	Paddle player1;
 	Paddle player2;

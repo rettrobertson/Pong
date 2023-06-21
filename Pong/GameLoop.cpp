@@ -9,9 +9,9 @@ GameLoop::GameLoop(float w, float h)
 	ball = Ball(1, width/2, height/2 - 45, 5, WHITE, goRight);
 	goRight = !goRight;
 	player1 = Paddle(50, height / 2 - 50, 5, 100, WHITE);
-	player1.addBall(ptr);
+	player1.addBall(&ball);
 	player2 = Paddle(width - 55, height / 2 - 50, 5, 100, WHITE);
-	player2.addBall(ptr);
+	player2.addBall(&ball);
 	clock = Clock(4, width, height, WHITE, 128);
 
 	m_inputKeyboard = KeyboardInput();
